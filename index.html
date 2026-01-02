@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Game - Modern UI</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play Bubble Pop — a fast-paced bubble clicking game. Hit the target bubble before the timer ends and rack up your score on desktop and mobile."
+    />
+    <meta
+      name="keywords"
+      content="bubble game, clicker game, arcade game, web game, casual game"
+    />
+    <title>Bubble Pop Game — Fast Click Challenge</title>
+    <meta
+      property="og:title"
+      content="Bubble Pop Game — Fast Click Challenge"
+    />
+    <meta
+      property="og:description"
+      content="Fast-paced bubble clicking game. Hit the target bubble before time runs out and boost your score."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Bubble Pop Game — Fast Click Challenge"
+    />
+    <meta
+      name="twitter:description"
+      content="Fast-paced bubble clicking game. Hit the target bubble before time runs out and boost your score."
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1"></script>
-</head>
-<body>
-    <div class="main">
-        <div class="panel">
-            <div class="ptop">
-                <div class="elem">
-                    <h4>Hit</h4>
-                    <div id="hitVal" class="box">5</div>
-                </div>
-                <div class="elem">
-                    <h4>Timer</h4>
-                    <div id="timer" class="box">60</div>
-                </div>
-                <div class="elem">
-                    <h4>Score</h4>
-                    <div id="scoreVal" class="box">0</div>
-                </div>
-            </div>
-            <div class="pbtm"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Bubble Pop Game",
+        "description": "Fast-paced bubble clicking game. Hit the target bubble before time runs out and boost your score.",
+        "inLanguage": "en",
+        "genre": "Arcade",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web"
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Bubble Pop Game</h1>
+      <p>
+        Play a fast-paced bubble clicking challenge. Hit the target bubble
+        before the timer runs out and boost your score.
+      </p>
+    </header>
+    <main class="main">
+      <div class="panel">
+        <div class="ptop">
+          <div class="elem">
+            <h4>Hit</h4>
+            <div id="hitVal" class="box">5</div>
+          </div>
+          <div class="elem">
+            <h4>Timer</h4>
+            <div id="timer" class="box">60</div>
+          </div>
+          <div class="elem">
+            <h4>Score</h4>
+            <div id="scoreVal" class="box">0</div>
+          </div>
         </div>
-    </div>
+        <div class="pbtm"></div>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
